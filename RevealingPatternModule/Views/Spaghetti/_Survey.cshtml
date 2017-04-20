@@ -7,4 +7,5 @@
         <button id="NoButton" class="btn btn-default" data-url="@Url.Action("Update", "Survey")" data-id="@Model.PageId" data-value="No">No</button>
     </p>
     <p id="SurveyMessage"></p>
+    @Html.HiddenFor(p=>p.PageId)
 </div>

@@ -127,6 +127,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\GetMoreLibrariesModel.cs" />
+    <Compile Include="Models\GettingStartedModel.cs" />
     <Compile Include="Models\SurveyAnswer.cs" />
     <Compile Include="Models\SurveyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +141,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <None Include="Scripts\app\spaghetti.js" />
+    <Content Include="Requirement - Appendix 1.txt" />
+    <Content Include="Requirement.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -164,15 +168,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Spaghetti\Index.cshtml" />
     <Content Include="Views\Module\Index.cshtml" />
     <Content Include="Views\Spaghetti\LogIn.cshtml" />
     <Content Include="Views\Spaghetti\GettingStarted.cshtml" />
     <Content Include="Views\Spaghetti\GetMoreLibraries.cshtml" />
-    <Content Include="Views\Spaghetti\GettingStartedWithPartial.cshtml" />
     <Content Include="Views\Spaghetti\_Survey.cshtml" />
   </ItemGroup>
   <ItemGroup>

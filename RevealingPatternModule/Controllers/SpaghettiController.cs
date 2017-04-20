@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using RevealingPatternModule.Models;
 
 namespace RevealingPatternModule.Controllers
 {
@@ -6,17 +7,20 @@ namespace RevealingPatternModule.Controllers
     {
         public ActionResult GettingStarted()
         {
-            return View();
+            var gettingStartedModel = new GettingStartedModel
+            {
+                SurveyModel = new SurveyModel("GettingStarted")
+            };
+            return View(gettingStartedModel);
         }
-
-        public ActionResult GettingStartedWithPartial()
-        {
-            return View();
-        }
-
+        
         public ActionResult GetMoreLibraries()
         {
-            return View();
+            var getMoreLibrariesModel = new GetMoreLibrariesModel
+            {
+                SurveyModel = new SurveyModel("GetMoreLibraries")
+            };
+            return View(getMoreLibrariesModel);
         }
     }
 }

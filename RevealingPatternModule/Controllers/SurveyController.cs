@@ -8,7 +8,7 @@ namespace RevealingPatternModule.Controllers
         [HttpPost]
         public ActionResult Update(SurveyModel model)
         {
-            return Content("Thanks for the response :).");
+            return Content(string.Format("Thanks for the feedback :). Your answer was *{0}*", model.Answer));
         }
     }
 }

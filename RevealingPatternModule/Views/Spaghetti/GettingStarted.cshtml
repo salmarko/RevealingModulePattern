@@ -1,4 +1,4 @@
-﻿@model dynamic
+﻿@model GettingStartedModel
 
 @{
     ViewBag.Title = "Getting started";
@@ -17,18 +17,10 @@
             enables a clean separation of concerns and gives you full control over markup
             for enjoyable, agile development.
         </p>
-        <p><a class="btn btn-default" href="@Url.Action("GettingStartedWithPartial")">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="@Url.Action("GetMoreLibraries")">Get more libraries &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <div>
-            <h3>Was this page helpfull?</h3>
-            <p>Please select option:</p>
-            <p>
-                <button id="YesButton" class="btn btn-default" data-url="@Url.Action("Update", "Survey")" data-id="@Model.PageId" data-value="Yes">Yes</button>
-                <button id="NoButton" class="btn btn-default" data-url="@Url.Action("Update", "Survey")" data-id="@Model.PageId" data-value="No">No</button>
-            </p>
-            <p id="SurveyMessage"></p>
-        </div>
+        @Html.Partial("_Survey", Model.SurveyModel)
     </div>
 </div>
 
