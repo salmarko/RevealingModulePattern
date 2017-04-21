@@ -4,3 +4,4 @@
 - AJAX should be used for server request. 
 - Response should have a message "Thanks for the feedback :). Your answer was *{Yes}/{No}*" shown to the user.
 - If user already sent feedback for the current page, hide all info and show following message:  "You already sent feedback for this page.". JavaScript cookies are used to mark page as answered.
+- Yes and No buttons should have jqueryUI tooltip plugin attached to a Title attribute describing it's function.

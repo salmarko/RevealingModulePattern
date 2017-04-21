@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevealingPatternModule", "RevealingPatternModule\RevealingPatternModule.csproj", "{DB3AC64E-FFD4-45DA-B63B-A26F357356B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevealingModulePattern", "RevealingPatternModule\RevealingModulePattern.csproj", "{DB3AC64E-FFD4-45DA-B63B-A26F357356B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

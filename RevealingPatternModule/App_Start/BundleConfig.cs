@@ -23,8 +23,8 @@ namespace RevealingPatternModule
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/spaghetti").Include(
-                      "~/Scripts/app/spaghetti.js"));
+            bundles.Add(new ScriptBundle("~/bundles/classic").Include(
+                      "~/Scripts/app/classic.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

@@ -1,12 +1,26 @@
 ﻿using System.Web.Mvc;
+using RevealingPatternModule.Models;
 
 namespace RevealingPatternModule.Controllers
 {
     public class ModuleController : Controller
     {
-        public ActionResult Index()
+        public ActionResult GettingStarted()
         {
-            return View();
+            var gettingStartedModel = new GettingStartedModel
+            {
+                SurveyModel = new SurveyModel("GettingStarted")
+            };
+            return View(gettingStartedModel);
+        }
+
+        public ActionResult GetMoreLibraries()
+        {
+            var getMoreLibrariesModel = new GetMoreLibrariesModel
+            {
+                SurveyModel = new SurveyModel("GetMoreLibraries")
+            };
+            return View(getMoreLibrariesModel);
         }
     }
 }

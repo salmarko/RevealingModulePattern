@@ -3,7 +3,7 @@ using RevealingPatternModule.Models;
 
 namespace RevealingPatternModule.Controllers
 {
-    public class SpaghettiController : Controller
+    public class ClassicController : Controller
     {
         public ActionResult GettingStarted()
         {
