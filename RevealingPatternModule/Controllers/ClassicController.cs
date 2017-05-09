@@ -22,5 +22,23 @@ namespace RevealingPatternModule.Controllers
             };
             return View(getMoreLibrariesModel);
         }
+
+        public ActionResult GettingStartedAdvanced()
+        {
+            var gettingStartedAdvancedModel = new GettingStartedAdvancedModel
+            {
+                SurveyModel = new SurveyModel("GettingStartedAdvanced")
+            };
+            return PartialView(gettingStartedAdvancedModel);
+        }
+
+        public ActionResult GetMoreLibrariesAdvanced()
+        {
+            var getMoreLibrariesAdvanced = new GetMoreLibrariesAdvancedModel
+            {
+                SurveyModel = new SurveyModel("GetMoreLibrariesAdvanced")
+            };
+            return PartialView(getMoreLibrariesAdvanced);
+        }
     }
 }

@@ -1,1 +1,1 @@
-﻿- Feedback component should be available on modal (overlay) windows also.
+﻿- Feedback component should be available on modal (overlay) pages also.

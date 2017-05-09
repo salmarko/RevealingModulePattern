@@ -6,7 +6,7 @@
 
 @section scripts
 {
-    @Scripts.Render("~/bundles/classic")
+    @Scripts.Render("~/bundles/gettingstarted-classic")
 }
 
 <div class="row">
@@ -17,12 +17,14 @@
             enables a clean separation of concerns and gives you full control over markup
             for enjoyable, agile development.
         </p>
-        <p><a class="btn btn-default" href="@Url.Action("GetMoreLibraries")">Get more libraries &raquo;</a></p>
+        <p><a id="GettingStartedAdvanced" class="btn btn-default" href="@Url.Action("GettingStartedAdvanced")">Getting started Advanced &raquo;</a>
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("GetMoreLibraries")">Get more libraries &raquo;</a>
+        </p>
     </div>
     <div class="col-md-4">
         @Html.Partial("_Survey", Model.SurveyModel)
     </div>
 </div>
 
-
-
+<div class="modal" id="GettingStartedAdvancedModal" tabindex="-1" aria-labelledby="myModalLabel"></div>

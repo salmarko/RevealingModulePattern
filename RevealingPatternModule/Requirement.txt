@@ -1,7 +1,5 @@
-﻿- As a user, I would like to send feedback for each page in app. 
+﻿- As a user, I would like to send feedback for each page in app, using AJAX for request. 
 - Feedback is in the form of Yes/No answer to the question "Was this page helpfull?". 
-- Yes and No are buttons. 
-- AJAX should be used for server request. 
 - Response should have a message "Thanks for the feedback :). Your answer was *{Yes}/{No}*" shown to the user.
-- If user already sent feedback for the current page, hide all info and show following message:  "You already sent feedback for this page.". JavaScript cookies are used to mark page as answered.
+- Yes and No are buttons. 
 - Yes and No buttons should have jqueryUI tooltip plugin attached to a Title attribute describing it's function.

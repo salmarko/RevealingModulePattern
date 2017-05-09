@@ -23,8 +23,25 @@ namespace RevealingPatternModule
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/classic").Include(
-                      "~/Scripts/app/classic.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/gettingstarted-classic").Include(
+                    "~/Scripts/app/classic/GettingStarted.js",
+                    "~/Scripts/app/classic/Survey.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/getmorelibraries-classic").Include(
+                    "~/Scripts/app/classic/GetMoreLibraries.js",
+                    "~/Scripts/app/classic/Survey.js"));
+
+
+
+            bundles.Add(new ScriptBundle("~/bundles/gettingstarted-module").Include(
+                    "~/Scripts/app/module/GettingStarted.js",
+                    "~/Scripts/app/module/_Survey.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/getmorelibraries-module").Include(
+                    "~/Scripts/app/module/GetMoreLibraries.js",
+                    "~/Scripts/app/module/_Survey.js"));
+
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

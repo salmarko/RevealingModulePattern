@@ -6,13 +6,16 @@
 
 @section scripts
 {
-    @Scripts.Render("~/bundles/classic")
+    @Scripts.Render("~/bundles/getmorelibraries-classic")
 }
 
 <div class="row">
     <div class="col-md-4">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p>
+            <a id="GetMoreLibrariesAdvanced" class="btn btn-default" href="@Url.Action("GetMoreLibrariesAdvanced")">Get more libraries Advanced &raquo;</a>
+        </p>
         <p><a class="btn btn-default" href="@Url.Action("GettingStarted")">Getting started &raquo;</a></p>
     </div>
     <div class="col-md-4">
@@ -20,3 +23,4 @@
     </div>
 </div>
 
+<div class="modal" id="GetMoreLibrariesAdvancedModal" tabindex="-1" aria-labelledby="myModalLabel"></div>

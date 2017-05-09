@@ -1,7 +1,26 @@
 ﻿@model GetMoreLibrariesModel
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Get More Libraries";
 }
 
-<h2>title</h2>
+@section scripts
+{
+    @Scripts.Render("~/bundles/getmorelibraries-module")
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p>
+            <a id="GetMoreLibrariesAdvanced" class="btn btn-default" href="@Url.Action("GetMoreLibrariesAdvanced")">Get more libraries Advanced &raquo;</a>
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("GettingStarted")">Getting started &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        @Html.Partial("_Survey", Model.SurveyModel)
+    </div>
+</div>
+
+<div class="modal" id="GetMoreLibrariesAdvancedModal" tabindex="-1" aria-labelledby="myModalLabel"></div>
